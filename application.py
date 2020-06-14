@@ -46,7 +46,7 @@ class Users(Resource):
         if output != []:
             return output[0]
         else:
-            api.abort(404, "Id {} doesn't exist".format(id))
+            api.abort(404, "Id {}  doesn't exist".format(id))
 
 
 @api.route('/city/<string:city>/users')
